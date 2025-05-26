@@ -244,8 +244,8 @@ def update_graphs(selected_models):
         scatter.add_trace(go.Scatter(
             x=capacity_data[m],
             y=cop_data[m],
-            mode='markers+text',
-            text=[m]*len(capacity_data[m]),
+            mode='markers',
+            text=["冷房Aなどの試験条件を表示可能"]*len(capacity_data[m]),
             textposition='top center',
             marker=dict(size=15, color=colors[m]),
             name=m
